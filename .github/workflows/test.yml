@@ -7,9 +7,9 @@ jobs:
             - name: Get code on the machine
               uses: actions/checkout@v7
             - name: lint
-              run: npm lint
+              run: npm run lint
             - name: build
-              run: npm build
+              run: npm run build
             - name: test
-              run: npm test
+              run: npm run test
 
