@@ -4,6 +4,8 @@ jobs:
     Installing_scripts:
         runs-on: ubuntu-latest
         steps:
+            - name: Get code on the machine
+              uses: actions/checkout@v7
             - name: lint
               run: npm lint
             - name: build
