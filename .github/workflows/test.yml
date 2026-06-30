@@ -1,0 +1,13 @@
+name: Practice
+on: push
+jobs: 
+    Installing_scripts:
+        runs-on: ubuntu-latest
+        steps:
+            - name: lint
+              run: npm lint
+            - name: build
+              run: npm build
+            - name: test
+              run: npm test
+
